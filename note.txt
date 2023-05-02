@@ -1,0 +1,121 @@
+React
+-----
+
+npx create-react-app appname  -create an app in react
+
+npm start                     - run app
+
+building blocks of react
+------------------------
+
+html
+css
+js
+
+Angular                               React
+--------                             -------
+-framework of js          |          -library of js
+(not developer friendly)             (developer friendly)
+-real DOM                 |          -virtual DOM
+(Re-runs the entire dom if            (Re-runs  only the portain that was changed/updated if any change occurs)
+an single change occurs)  |
+works slower              |          -works faster
+                                      Next.js (framework of React)
+only class based components          -class based and function based components can be used
+are used.                                     
+
+Advantages of React
+-------------------
+1. React uses Virtual DOM (faster)
+2. reuseable components
+3. jsx - (javascript Xml)  
+4. fast and flexible
+
+components in react
+-------------------
+
+1. class based - statefull components
+2. function based - stateless components
+
+hooks - used to add external features to our project
+- React hooks 
+
+
+state
+------
+object used to store data inside a component in react
+
+useState -  Hook used to create a state.  
+library - react
+
+
+props  (short form oh properties)
+-----
+To share data from parent to child component we have to use props technique
+Destructuring
+-------------
+used to make the props concept much more easier.
+
+API call in js
+--------------
+
+Ajax - api call in js
+
+-XmlHttprequest
+-fetch
+-async await
+
+useEffect
+---------
+library - react
+useEffect-- it is a hook similar to ngonInit and constructor.it is the first
+working hook of a component.
+if we want to view anything upon opening itself then we can use useEffect hook
+
+
+Redirection/Routing in react
+----------------------------
+
+react-router-dom   - library used for Routing
+
+Browser Router  - wraps the main component inside browser router component
+Route          - wraps the component inside Router which needs Redirection
+Routes          - wraps all the router if we set more than one component paths
+
+
+Link - A component in react-router-dom used for Redirection
+
+useParams - hook  in react-router-dom used to access params
+
+Redux
+------
+coupling - sharing of data from  parent to child through the sub-componentsis known as coupling
+
+when coupling increases in components there is a chance of props drilling
+props drilling - at the time of data sharing from parent to child if any intermidiate component have any
+errors then the data will stuck there
+
+Redux - State management technology
+if A wants to transfer data to c then it is transfered directly without passing through B.inorder to avoid 
+props drilling.thus introduced Redux
+
+we need to reduce coupling and make all component independent to avoid props drilling
+
+store -a file used to store data in redux.
+All components can access data inside store
+
+libraries for Redux
+-------------------
+
+-redux
+-react-redux
+-redux-thunk
+
+npm i redux react-redux redux-thunk
+
+create store --      Method in redux used to create a store
+
+In redux middleware is used to make redux as asynchronous(actually redux is synchrounous 
+so all asynchrounous function inside redux will behave as synchrounous)
+
+thunk --    used to create middleware
